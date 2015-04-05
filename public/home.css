@@ -1,13 +1,9 @@
 
 body {
     
-    margin: 0 auto;
-    background-image: url("background.png");
+    background-color: #92DDF4;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
-    
-    
 }
 
 #content {overflow: auto;}
@@ -16,9 +12,70 @@ body {
     margin: 0%;
 }
 
+.radio .buybutton {
+    width: 40%;
+    float: left;
+    text-align: center;
+      margin-top: -15px;
+}
+
+.radio h1 {
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Abel', Arial;
+  margin-top: -20px;
+}
+
+.radio label {
+  margin-left: -20px;
+  font-size: 16px;
+  posiiton: relative;
+  font-family: 'Abel', Arial;
+}
+
+.radio .sellbutton {
+  width: 40%;
+  margin-top: -15px;
+  float: right;
+  text-align: center;
+
+}
+
+.leftradiobutton {
+  position: relative;
+  margin-left: 25px;
+}
+
+.rightradiobutton {
+  position: relative;
+  margin-left: 25px;
+}
+
+.col-sm-12  {
+  font-size: 12px;
+}
+
+.col-md-7 .text-center {
+  font-size: 28px;
+  font-family: 'Abel', Arial;
+}
+
+.col-md-7 {
+  margin-top: 20px;
+  left: 80px;
+}
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////Customizing the box ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.col-md-3{
+  margin-bottom: 10%;
+  position: static;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
 
 
 .btn-group-justified{
@@ -86,8 +143,7 @@ body {
 
 
 #footer{
-    left: 0;
-    position: fixed;
+    position: relative;
     text-align: center;
     bottom: 0;
     width: 100%;

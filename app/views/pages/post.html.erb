@@ -83,31 +83,39 @@
 	<p class="alert alert-danger"><%= alert %></p>
 	<% end %>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<% if current_user %>
 
 			<%= bootstrap_form_for Post.new do |f| %>
 
-			<div class="col-md-3 well">
+			<div class="col-md-3 col-xs-12 well">
 
-				<legend class="text-center">Create a Post</legend>
+			<!--	<legend class="text-center">Create a Post</legend> -->
 
 				<div class="radio">
 					<h1>I would like to: </h1>
-					<label>Buy</label>
-					<%= f.radio_button(:action, 'sell', :id => 'sell') %>
-					<label>Sell</label>
-					<%= f.radio_button(:action, 'buy' , :id => 'buy') %>
+					<div class="buybutton">
+						<label>Buy</label>
+						<div class="leftradiobutton">
+						<%= f.radio_button(:action, 'sell', :id => 'sell') %>
+						</div>
+					</div>
+					<div class="sellbutton">
+						<label>Sell</label>
+						<div class="rightradiobutton">
+						<%= f.radio_button(:action, 'buy' , :id => 'buy') %>
+						</div>
+					</div>
 					<br>
 				</div>
 				
-				<div class="col-sm-5 form">
+				<div class="col-sm-12 form">
 
 					<%= f.text_field :title, :label => "Title" %>
 					<%= f.url_field :pic, :label => "Picture URL" %>
 					<%= f.number_field :price, :label => "Approximate Price" %>
-					<%= f.text_area :desc, :label => "Description" %>
+					<%= f.text_field :desc, :label => "Description" %>
 					<%= f.select :category, [['Appliances', 'Appliances'], ['Art', 'Art'], ['Clothes', 'Clothes'], ['Education', 'Education'], ['Electronics', 'Electronics'], ['Food', 'Food'], ['Furniture', 'Furniture'], ['Media', 'Media'], ['Textbooks', 'Textbooks'], ['Tools', 'Tools'], ['Other', 'Other']] %>
 					<%= f.hidden_field :user_id, :value => current_user.id %>
 					<%= f.hidden_field :lat, id: "lat", autocomplete: "off" %>
@@ -117,17 +125,30 @@
 				</div>
 
 			</div>
-
-			<div class="col-md-9 well">
+			<div class="col-md-7 col-xs-12 well">
 
 				<h1 class="text-center">Place your post on the map below:</h1>
-				<input id="map-search" class="controls" type="text" placeholder="Search Box">
+				Search a Location: <input id="map-search" class="controls" type="text" placeholder="Search Box"><br></br>
 				<div id="map" style='height: 400px;'></div>
 
 			</div>
 
+
 			<% end %>
 			<% end %>
 			<script>initialize();</script>
+
+	<!--<div id = "footer">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Copyright &copy 2015 YardSail.com</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            </div>
+            </div>
+        </nav>    
+    </div>-->
+
 		</body>
 		</html>

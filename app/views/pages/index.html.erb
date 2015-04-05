@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script type="text/javascript" src="/script.js.erb"></script>
+	<script type="text/javascript" src="/script.js"></script>
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 </head>
-<body>
+<body style="background-color: #92DDF4;">
 	<div class = "navbars">
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
@@ -81,28 +82,29 @@
 	<p class="alert alert-danger"><%= alert %></p>
 	<% end %>
 
-	<div class="container">
+	<div class="container" style="background-color: white;">
 		<div class="row">
 			<div class="col-md-12 well">
-				<input id="map-search" class="controls" type="text" placeholder="Search Box">
+				Search a Location: <input id="map-search" class="controls" type="text" placeholder="Search Box"><br></br>
 				<div id="map" style='height: 400px;'></div>
-				<input type="text" id="lat"/>
-				<input type="text" id="lng"/>
+				<input type="hidden" id="lat"/>
+				<input type="hidden" id="lng"/>
 				<br>
 				<% Post.all.each do |p| %>
-					<input id="latVal" value="<%= p.lat %>" />
-					<input id="lngVal" value="<%= p.lng %>" />
+					Latitude: <input id="latVal" value="<%= p.lat %>" />
+					Longitude: <input id="lngVal" value="<%= p.lng %>" />
 					<script>
 					addPost(document.getElementById("latVal").value, document.getElementById("lngVal").value);
-					var elem = document.getElementById("latVal");
-					elem.parentNode.removeChild(elem);
-					var elem = document.getElementById("lngVal");
-					elem.parentNode.removeChild(elem);
+					document.getElementById("latVal").id = "a";
+					document.getElementById("lngVal").id = "b";
 					</script>
-					<div class="well">
-					<h1><%= p.title %></h1>
-					<p><%= p.desc %></p>
-					<p>$<%= p.price %></p>
+					<div class="well" style="background-color: white;">
+					<div class="posttitle" style="font-size:24px;font-family:'Abel',Arial;text-trasnform:bold;color:navy;"><%= p.title %></div>
+					<div class="postdesc" style="font-family: 'Abel', Arial;font-size: 20px;"Description:<p><%= p.desc %></p></div>
+					<div class="postprice" style="font-family: 'Abel', Arial;font-size: 16px;float:left;margin-right: 50px; padding-bottom: 20px;"<p>Price: $<%= p.price %></p></div>
+					<div class="postcate" style="font-family: 'Abel', Arial;font-size: 16px;float:left;margin-right: 50px;padding-bottom: 20px;"<p>Category: <%= p.category %></p></div>
+					<div class="posttime" style="font-family: 'Abel', Arial;font-size: 16px;float:left;margin-right: 50px;padding-bottom: 20px;"<p>Posted at: <%= p.created_at %></p></div>
+					<br>
 					</div>
 				<% end %>
 			</div>
