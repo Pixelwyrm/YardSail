@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Headline';
+    src: url('/ChoplinMedium.otf');
+}
+@font-face {
+    font-family: 'HeadlineLight';
+    src: url('/ChoplinLight.otf');
+}
+
+body {
+}
+
+.top {
+  border-style: none;
+}
+.top h1 {
+  font-family: 'Headline';
+  color: #FFFFFF;
+  font-size: 70px;
+}
+.page-header {
+    margin: 0px 0 0px;
+}
+
+.well {
+  background-color: #CFF0FF;
+}
+.header {
+  font-family: 'Headline';
+  font-size: 30px;
+  color: #FFA200;
+}
+.header2 {
+  font-family: 'Headline';
+  font-size: 20px;
+  color: #FFA200;
+}
+.subHeader {
+  font-family: 'HeadlineLight';
+  font-size: 20px;
+}
+.para {
+  font-family: 'HeadlineLight';
+  font-size: 25px;
+}
+.below {
+}
+.above {
+  background-color: #FFA200;
+}
+.items {
+  font-family: 'HeadlineLight';
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.noUnderline:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  background-image: url("grey.png");
+  background-color: #5E5E5E;
+  border: 0px;
+  box-shadow: 0px 0px 0px #B30000;
+  min-height: 75px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.navbar-default .navbar-nav > li > a{
+  color: white;
+  margin-right: 1px;
+}
+.navbar-toggle {
+  background-color: white;
+}
+.navbar-default button.navbar-toggle.collapsed:focus, 
+.navbar-default button.navbar-toggle.collapsed{ background-color: white;
+    -webkit-transition:all .4s;
+    -moz-transition:all .4s;
+    -ms-transition:all .4s;
+    -o-transition:all .4s;
+    transition:all .4s;
+}
+.navbar-default button.navbar-toggle:focus,
+.navbar-default button.navbar-toggle:hover,
+.navbar-default button.navbar-toggle,
+.navbar-default button.navbar-toggle.collapsed:hover { background-color: #34495e;
+    -webkit-transition:all .4s;
+    -moz-transition:all .4s;
+    -ms-transition:all .4s;
+    -o-transition:all .4s;
+    transition:all .4s;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active, 
+.navbar-default .navbar-nav .dropdown > a:focus, .navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:active {
+  background-color: white;
+  color: black;
+}
+.navbar-default .navbar-nav .dropdown .dropdown-menu {
+  background-color: #C9F6FF;
+  color: black;
+  text-align: center;
+  min-width: 120px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+.single-vid {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+.pos-right {
+  float: right;
+}
+.form {
+  max-width: 500px;
+  float: none;
+  margin: 0 auto;
+}
+.form-field {
+  max-width: 350px;
+  float: none;
+  margin: 0 auto;
+}
+
+
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 768px) {
+  .navbar-nav .full a{
+    line-height: 45px;
+    width: 120px;
+    text-align: center;
+    margin-right: 1px;
+  }
+  .navbar-default .navbar-nav .icon a{
+    line-height: 45px;
+    margin-right: 1px;
+    width: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-nav li a {
+    line-height: 45px;
+    text-align: center;
+    margin-right: 1px;
+  }
+}

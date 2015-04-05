@@ -1,0 +1,124 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-color: #92DDF4;
+}
+
+#content {overflow: auto;}
+
+#nav, #feature, #footer{
+    margin: 0%;
+}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+    
+.column3 {margin-right: 0%;}
+
+li {
+    display: inline;
+    padding: 5em;    
+}
+
+#background-title {
+    height: 90%;
+    z-index: -1;
+    position: relative;
+}
+
+.titlebar {
+    position: absolute;
+    height: 60%;
+    width: 33%;
+    top: 13%;
+    left: 33%;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 100%;
+    -webkit-transition: all 1s ease;
+}
+
+.titlebar:hover {
+    border-radius: 30%;
+    -webkit-transition: all 0.5s ease;
+}
+
+.titleYard {
+    height: 10%;
+    width: 40%;
+    top: 27%;
+    left: 30%;
+    position: absolute;
+    text-align: center;
+}
+
+.titleYard a {
+    text-decoration: none;
+    font-size: 58px;
+    font-family: 'Lobster', Arial;
+    color: navy;
+    -webkit-transition: all 0.3s ease;
+}
+
+.titleYard a:hover {
+    color: gray;
+    -webkit-transition: all 0.3s ease;
+} 
+
+.description {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    font-family: 'Abel', Arial;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-button {
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    padding: 8px;
+    width: 5%;
+    height: 5%;
+    top: 10%;
+    float: right;
+    border-bottom-left-radius: 25%;
+    -webkit-transition: all 1s ease;
+}
+
+.login-button:hover {
+    width: 8%;
+    -webkit-transition: all 1s ease;
+}
+
+.login-button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Abel', Arial;
+    font-size: 20px;
+}
+
+#footer {
+    background-color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Abel', Arial;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+
+.article {
+    height: 20em;
+    background:#efefef;
+}
+
+p{
+    text-align:center;
+}

@@ -1,0 +1,107 @@
+
+body {
+    
+    margin: 0 auto;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+    
+}
+
+#content {overflow: auto;}
+
+#nav, #feature, #footer{
+    margin: 0%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Customizing the box ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.btn-group-justified{
+
+    width: 50%;
+    left: 20%;
+
+}
+
+.btn-primary{
+    
+    
+}
+/*
+.panel-primary{
+    width: 400px;
+    height: 450px;
+    float:left;
+    margin: 0 auto;
+    
+    margin-left: 50px;
+    margin-top: 50px;
+    
+
+}
+
+
+.map{
+    width: 700px;
+    height: 450px;
+    
+    margin: 0 auto;
+    right: 1250px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    
+    }
+  */  
+   
+  .map{
+  height: 400px;
+  margin-top: 50px;
+  background-color: rgba(255,255,255,0.4);
+  }
+  
+  .box{
+  height: 400px;
+  margin-top: 50px;
+  opacity; 0.3;
+  background-color: rgba(255,255,255,0.4);
+    
+  }
+  
+  
+.navbar-brand{
+    font-family:'Abel', Arial;
+}
+  
+.navbar-inverse{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#footer{
+    left: 0;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#feature {
+    height: 10em;
+    margin-bottom 0em;
+    background-color: #efefef;
+}
+
+.article {
+    height: 10em;
+    background:#efefef;
+}
+
