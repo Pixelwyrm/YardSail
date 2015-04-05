@@ -32,13 +32,15 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Appliances</a></li>
 								<li><a href="#">Art</a></li>
 								<li><a href="#">Clothes</a></li>
 								<li><a href="#">Education</a></li>
-								<li class="divider"></li>
 								<li><a href="#">Electronics</a></li>
-								<li class="divider"></li>
-								<li><a href="#">food</a></li>
+								<li><a href="#">Food</a></li>
+								<li><a href="#">Furniture</a></li>
+								<li><a href="#">Media</a></li>
+								<li><a href="#">Other</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -91,8 +93,9 @@
 				<input type="hidden" id="lng"/>
 				<br>
 				<% Post.all.each do |p| %>
-					Latitude: <input id="latVal" value="<%= p.lat %>" />
-					Longitude: <input id="lngVal" value="<%= p.lng %>" />
+					<input id="latVal" type="hidden" value="<%= p.lat %>" />
+					<input id="lngVal" type="hidden" value="<%= p.lng %>" />
+					Location: <input value="<%= p.lat %>, <%= p.lng %>" />
 					<script>
 					addPost(document.getElementById("latVal").value, document.getElementById("lngVal").value);
 					document.getElementById("latVal").id = "a";
