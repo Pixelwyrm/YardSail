@@ -1,3 +1,5 @@
 == README
 
-YardSail is a website made with Ruby on Rails during the LA Hacks hackathon in 2015
+YardSail is a website made with Ruby on Rails during the LA Hacks hackathon in 2015.
+
+Check it out at: http://yardsail.herokuapp.com/
